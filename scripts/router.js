@@ -15,6 +15,7 @@ function lerQueryString() {
         let resultado = m.split("=");
         resposta[decodeURIComponent(resultado[0])] = decodeURIComponent(resultado[1]) || '';
     });
+    
 
     return resposta;
 }
