@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="/libs/bootstrap/css/bootstrap.min.css.map" />
+    <link rel="stylesheet" type="text/css" href="/styles/reset.css" />
+
+    <title>Início</title>
+</head>
+<body>
+    <div id="main">
+        <header id="menu-top">
+            <div id="dvLogoMenuTop">
+                <img alt="Logo NextGenBooks" height="60px" src="../images/logo-pequena.png" />
+            </div>
+            <nav id="nvMenuTop">
+                <div>
+                    <button onclick="rotear('inicio')">Início</button>
+                </div>
+                <div>
+                    <button onclick="rotear('sobre')">Sobre</button>
+                </div>
+                <div>
+                    <button onclick="rotear('contatenos')">Contate-nos</button>
+                </div>
+            </nav>
+        </header>
+    
+        <main id="conteudo">
+            <div id="render-conteudo">
+                
+            </div>
+        </main>
+    
+        <footer>
+            @TrilhaZero
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="../scripts/router.js"></script>
+    <script type="text/javascript" src="/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        document.body.onload = function () { 
+            rotear();
+        };
+    </script>
+</body>
+</html>

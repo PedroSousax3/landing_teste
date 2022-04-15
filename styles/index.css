@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    font-family: Kanit, sans-serif;
+    box-sizing: border-box;
+}
+
+#menu-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+
+    width: 100vw;
+    height: 70px;
+    padding: 5px;
+
+    background-color: rgb(var(--primaria-fundo-rgb));
+
+    box-shadow: 0px 2px 12px rgb(255 255 255);
+    border-bottom: 5px solid rgba(var(--secundaria-texto-rgb));
+}
+
+#nvMenuTop {
+    display: flex;
+}
+
+#dvLogoMenuTop {}
+
+#menu-top > #nvMenuTop > div {
+    padding: 10px;
+    margin: 5px;
+}
+
+#menu-top > #nvMenuTop > div:nth-child(1) {
+    margin-left: 30px;
+}
+
+#menu-top > #nvMenuTop > div > button {
+    color: rgb(var(--primaria-texto-rgb), 0.75);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#menu-top > #nvMenuTop > div > button:hover {
+    color: rgb(var(--primaria-texto-rgb), 1);
+}
+
+#conteudo {
+    flex: 1;
+    overflow: none;
+    margin-top: 70px;
+    background-color: rgb(var(--primaria-fundo-rgb));
+    height: auto;
+}
+
+#emContent {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+}
+
+#main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+main >  #render-conteudo {
+    padding: 0px 3rem;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(var(--secundaria-texto-rgb));
+}
