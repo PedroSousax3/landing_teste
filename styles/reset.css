@@ -13,8 +13,8 @@ body  {
     --secundaria-texto-rgb: 109, 231, 37 !important;
 }
 
-h1 {
-	color: rgb(--primaria-texto-rgb);
+h1, h2 {
+	color: rgb(var(--primaria-texto-rgb));
 }
 
 .btn-primary {

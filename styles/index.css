@@ -39,7 +39,7 @@
 }
 
 #menu-top > #nvMenuTop > div > button {
-    color: rgb(var(--primaria-texto-rgb), 0.75);
+    color: rgb(var(--primaria-texto-rgb));
     text-decoration: none;
     font-weight: 600;
     font-size: 1.2rem;
@@ -49,7 +49,7 @@
 }
 
 #menu-top > #nvMenuTop > div > button:hover {
-    color: rgb(var(--primaria-texto-rgb), 1);
+    color: rgb(var(--secundaria-texto-rgb));
 }
 
 #conteudo {
@@ -80,4 +80,25 @@ footer {
     text-align: center;
     padding: 5px;
     background-color: rgb(var(--secundaria-texto-rgb));
+}
+
+
+ul.estilo-padrao {
+    list-style-type: none;
+    color: rgb(var(--secundaria-texto-rgb));
+    text-decoration: none;
+    padding: 0;
+}
+
+ul.estilo-padrao > li > a {
+    color: rgb(var(--primaria-texto-rgb));
+    font-size: 2em;
+    text-decoration: none;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+}
+
+ul.estilo-padrao > li > a:hover {
+    color: rgba(var(--secundaria-texto-rgb));
 }

@@ -1,0 +1,11 @@
+.card {
+    text-align: center;
+}
+
+.card > div > i {
+    font-size: 40px;
+}
+
+.card.bg-success {
+    background-color: rgba(var(--secundaria-texto-rgb)) !important;
+}

@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="/styles/index.css" />
     <link rel="stylesheet" type="text/css" href="/libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="/styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/index.css" />
 
     <title>Início</title>
 </head>
 <body>
     <div id="main">
-        <header id="menu-top">
+        <header id="menu-top" style="z-index: 100;">
             <div id="dvLogoMenuTop">
                 <img alt="Logo NextGenBooks" height="60px" src="../images/logo-pequena.png" />
             </div>
             <nav id="nvMenuTop">
                 <div>
-                    <button onclick="rotear('inicio')">Início</button>
+                    <button onclick='rotear("inicio")'>Início</button>
                 </div>
                 <div>
                     <button onclick="rotear('sobre')">Sobre</button>

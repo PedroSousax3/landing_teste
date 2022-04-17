@@ -1,4 +1,5 @@
-function rotear (page) {
+function rotear (page, links) {
+    console.log(links);
     if (!!page)
         sessionStorage.setItem('page', page || 'inicio');
     let path = `${window.location.origin}/pages/${sessionStorage.getItem('page') || 'inicio'}.html`;
