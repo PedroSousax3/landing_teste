@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="/styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="/styles/index.css" />
-
+    
     <link rel="icon" href="./images/icons/cropped-icone-trilhazero-32x32.png" sizes="32x32">
     <link rel="icon" href="./images/icons/cropped-icone-trilhazero-192x192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="./images/icons/cropped-icone-trilhazero-180x180.png">
-
+    
     
     <title>Início</title>
 </head>
 <body>
     <div id="main">
-        <header id="menu-top" style="z-index: 100;">
+        <header id="menu-top">
             <div id="dvLogoMenuTop">
                 <img alt="Logo NextGenBooks" height="60px" src="../images/logo-pequena.png" />
             </div>
@@ -34,6 +34,14 @@
                     <button onclick='rotear("contatenos", "Contate-nos")'>Contate-nos</button>
                 </div>
             </nav>
+
+            <div id="dvOpecoesMobile">
+                <button onclick='gerenciarMenu();' style="border: none; background: none;">
+                    <span class="material-icons" style="font-size: 40px;">
+                        view_headline
+                    </span>
+                </button>
+            </div>
         </header>
     
         <main id="conteudo">

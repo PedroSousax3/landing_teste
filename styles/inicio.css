@@ -9,3 +9,9 @@
 .card.bg-success {
     background-color: rgba(var(--secundaria-texto-rgb)) !important;
 }
+
+.card:hover {
+    background-color: rgba(var(--primaria-texto-rgb)) !important;
+    cursor: pointer;
+    transition-duration: 0.7s;
+}

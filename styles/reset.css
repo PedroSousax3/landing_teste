@@ -27,3 +27,46 @@ h1, h2 {
     background-color: rgba(var(--primaria-texto-rgb), 0.8);
     border-color: rgba(var(--primaria-texto-rgb), 0.8);
 }
+
+ul.estilo-padrao {
+    list-style-type: none;
+    color: rgb(var(--secundaria-texto-rgb));
+    text-decoration: none;
+    padding: 0;
+}
+
+ul.estilo-padrao > li > a {
+    color: rgb(var(--primaria-texto-rgb));
+    font-size: 2em;
+    text-decoration: none;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+}
+
+ul.estilo-padrao > li > a:hover {
+    color: rgba(var(--secundaria-texto-rgb));
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v126/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+  
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}

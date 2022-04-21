@@ -5,10 +5,18 @@
     box-sizing: border-box;
 }
 
+#main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 #menu-top {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
 
     display: flex;
     align-items: center;
@@ -27,8 +35,6 @@
     display: flex;
 }
 
-#dvLogoMenuTop {}
-
 #menu-top > #nvMenuTop > div {
     padding: 10px;
     margin: 5px;
@@ -44,12 +50,43 @@
     font-weight: 600;
     font-size: 1.2rem;
     background-color: transparent;
-    border: none;
+    border: transparent;
     cursor: pointer;
 }
 
 #menu-top > #nvMenuTop > div > button:hover {
     color: rgb(var(--secundaria-texto-rgb));
+}
+
+#dvOpecoesMobile {
+    display: none;
+}
+
+@media screen and (max-width: 575px) {
+    #dvOpecoesMobile {
+        display: block;
+        position: absolute;
+        right: 30px;
+    }
+
+    #menu-top > #nvMenuTop {
+        background-color : white;
+        position: fixed;
+        top: 70px;
+        padding: 0;
+        left: 0;
+        width: 100vw;
+        margin: 0;
+        flex-direction: column;   
+    }
+
+    #menu-top > #nvMenuTop > div:nth-child(1) {
+        margin-left: 0px;
+    }
+    
+    #menu-top > #nvMenuTop > div {
+        border-bottom: 5px solid rgba(var(--secundaria-texto-rgb));
+    }
 }
 
 #conteudo {
@@ -65,12 +102,7 @@
     min-height: calc(100vh - 70px);
 }
 
-#main {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+
 
 main >  #render-conteudo {
     padding: 0px 3rem;
@@ -79,26 +111,7 @@ main >  #render-conteudo {
 footer {
     text-align: center;
     padding: 5px;
-    background-color: rgb(var(--secundaria-texto-rgb));
-}
-
-
-ul.estilo-padrao {
-    list-style-type: none;
-    color: rgb(var(--secundaria-texto-rgb));
-    text-decoration: none;
-    padding: 0;
-}
-
-ul.estilo-padrao > li > a {
+    font-weight: 600;
     color: rgb(var(--primaria-texto-rgb));
-    font-size: 2em;
-    text-decoration: none;
-    cursor: pointer;
-    float: left;
-    margin-right: 10px;
-}
-
-ul.estilo-padrao > li > a:hover {
-    color: rgba(var(--secundaria-texto-rgb));
+    background-color: rgb(var(--secundaria-texto-rgb));
 }
