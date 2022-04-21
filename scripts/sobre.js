@@ -7,7 +7,7 @@ function enviarEmail() {
 
     if (txtNome.value && txtTelefone.value && txtEmail.value)
     {
-        document.getElementById('dvMensagemEmailEnviado').innerText = 'E-mail envido com sucesso!';
+        document.getElementById('dvTituloEmailEnviado').innerText = 'E-mail envido com sucesso!';
         document.getElementById('dvMensagemEmailEnviado').innerText = `Olá ${txtNome.value.split(' ')[0]}, logo estaremos em contato com o senho(a).`;
         bootstrap.Toast.getOrCreateInstance(toast).show();
     
@@ -15,7 +15,7 @@ function enviarEmail() {
     }
     else
     {
-        document.getElementById('dvMensagemEmailEnviado').innerText = 'Aviso';
+        document.getElementById('dvTituloEmailEnviado').innerText = 'Aviso';
         document.getElementById('dvMensagemEmailEnviado').innerText = `Preencha os campos "Nome", "Telefone" e "E-mail".`;
         bootstrap.Toast.getOrCreateInstance(toast).show();
     }
