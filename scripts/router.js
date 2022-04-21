@@ -7,7 +7,6 @@ function rotear (page, nome) {
 
     fetch(path, { 
         method: 'GET',
-        cache: 'force-cache'
     })
     .then((resp) => resp.text())
     .then(function (content) {
