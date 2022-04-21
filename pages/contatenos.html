@@ -13,24 +13,33 @@
             class="col-sm-6"
         >
             <div>
-                <label>Nome</label>
-                <input type="text" class="form-control" maxlength="255" required>
+                <label for="txtNome">Nome</label>
+                <input id="txtNome" type="text" class="form-control" maxlength="255" required>
             </div>
             <div>
-                <label>Telefone</label>
-                <input type="tel" class="form-control" maxlength="255" required>
+                <label for="txtTelefone">Telefone</label>
+                <input type="tel" id="txtTelefone" class="form-control" maxlength="255" required>
             </div>
             <div>
-                <label>E-mail</label>
-                <input type="email" class="form-control" maxlength="255" required>
+                <label for="txtEmail">E-mail</label>
+                <input type="email" id="txtEmail" class="form-control" maxlength="255" required>
             </div>
             <div>
-                <label>Observação</label>
-                <textarea rows="5" class="form-control"></textarea>
+                <label for="txtObservacao">Observação</label>
+                <textarea id="txtObservacao" rows="5" class="form-control"></textarea>
             </div>
             <div>
-                <button class="btn btn-primary mt-3">Enviar</button>
+                <button onclick="enviarEmail()" class="btn btn-primary mt-3">Enviar</button>
             </div>
         </div>
+    </div>
+
+    <div id="liveToast" class="toast position-fixed" role="alert" aria-live="assertive" style="top: 75px; right: 8px;" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">E-mail envido com sucesso!</strong>
+            <small>Agora</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body" id="dvMensagemEmailEnviado"></div>
     </div>
 </main>

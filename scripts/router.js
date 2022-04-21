@@ -4,17 +4,25 @@ function rotear (page, nome) {
         sessionStorage.setItem('name', nome || 'inicio');
     }
     let path = `${window.location.origin}/pages/${sessionStorage.getItem('page') || 'inicio'}.html`;
-    let request = new XMLHttpRequest();
-    request.onreadystatechange = function() {
-        document.getElementById("render-conteudo").innerHTML = this.response;
+
+    fetch(path, { 
+        method: 'GET'
+        //cache: 'default'//'force-cache'
+    })
+    .then((resp) => resp.text())
+    .then(function (content) {
         document.title = sessionStorage.getItem('name') || "Início";
-    };
-    request.open("GET", path, true);
-    request.send(null);
+        document.getElementById("render-conteudo").innerHTML = content;
+    });
+
+    gerenciarMenu();
 }
 
-
 function gerenciarMenu () {
-    let elemento = document.getElementById("nvMenuTop");
-    elemento.style.display = elemento.style.display == 'none' ? 'flex' : 'none';
+    let elemento = document.getElementById("nvMenuTopMobile");
+    if (window.innerWidth <= 575){
+        elemento.style.display = elemento.style.display == 'none' ? 'flex' : 'none';
+    }
+    else
+        elemento.style.display = 'none';
 }

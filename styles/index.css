@@ -28,11 +28,22 @@
     background-color: rgb(var(--primaria-fundo-rgb));
 
     box-shadow: 0px 2px 12px rgb(255 255 255);
-    border-bottom: 5px solid rgba(var(--secundaria-texto-rgb));
+    border-bottom: 5px solid rgb(var(--primaria-texto-rgb));
 }
 
 #nvMenuTop {
     display: flex;
+}
+
+#dvOpecoesMobile span.material-icons {
+    color: rgb(var(--primaria-texto-rgb));
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#dvOpecoesMobile > button {
+    text-align: center;
+    height: auto;
 }
 
 #menu-top > #nvMenuTop > div {
@@ -40,11 +51,38 @@
     margin: 5px;
 }
 
+#menu-top > #nvMenuTopMobile {
+    background-color : white;
+    
+    display : none;
+    flex-direction: column;
+    
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    
+    position: fixed;
+    top: 70px;
+    left: 0;
+
+    text-align: center;
+}
+
 #menu-top > #nvMenuTop > div:nth-child(1) {
     margin-left: 30px;
 }
 
-#menu-top > #nvMenuTop > div > button {
+#menu-top > #nvMenuTopMobile > div {
+    border-top: 5px solid white
+}
+
+#menu-top > #nvMenuTopMobile > div:nth-child(1) {
+    border-top: none;
+}
+
+
+#menu-top > #nvMenuTop > div > button,
+#menu-top > #nvMenuTopMobile > div > button {
     color: rgb(var(--primaria-texto-rgb));
     text-decoration: none;
     font-weight: 600;
@@ -54,12 +92,19 @@
     cursor: pointer;
 }
 
-#menu-top > #nvMenuTop > div > button:hover {
-    color: rgb(var(--secundaria-texto-rgb));
+#menu-top > #nvMenuTopMobile > div {
+    padding: 10px;
+    border-bottom: 3px solid rgb(var(--primaria-texto-rgb));
 }
 
 #dvOpecoesMobile {
     display: none;
+}
+
+@media screen and (min-width: 576px) {
+    #nvMenuTopMobile {
+        display: none!important;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -70,14 +115,11 @@
     }
 
     #menu-top > #nvMenuTop {
-        background-color : white;
-        position: fixed;
-        top: 70px;
-        padding: 0;
-        left: 0;
-        width: 100vw;
-        margin: 0;
-        flex-direction: column;   
+        display: none;
+    }
+
+    #menu-top > #nvMenuTopMobile {
+        display: none;
     }
 
     #menu-top > #nvMenuTop > div:nth-child(1) {
