@@ -6,8 +6,8 @@ function rotear (page, nome) {
     let path = `${window.location.origin}/pages/${sessionStorage.getItem('page') || 'inicio'}.html`;
 
     fetch(path, { 
-        method: 'GET'
-        //cache: 'default'//'force-cache'
+        method: 'GET',
+        cache: 'force-cache'
     })
     .then((resp) => resp.text())
     .then(function (content) {
