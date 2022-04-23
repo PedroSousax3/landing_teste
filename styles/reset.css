@@ -17,17 +17,6 @@ h1, h2 {
 	color: rgb(var(--primaria-texto-rgb));
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: rgb(var(--primaria-texto-rgb));
-    border-color: rgb(var(--primaria-texto-rgb));
-}
-
-.btn-primary:hover {
-    background-color: rgba(var(--primaria-texto-rgb), 0.8);
-    border-color: rgba(var(--primaria-texto-rgb), 0.8);
-}
-
 ul.estilo-padrao {
     list-style-type: none;
     color: rgb(var(--secundaria-texto-rgb));
