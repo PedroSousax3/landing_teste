@@ -230,3 +230,25 @@ footer {
 .text-white {
     color: rgb(var(--primaria-texto-rgb));
 }
+
+.card {
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.card > div > i {
+    font-size: 40px;
+}
+
+.card.bg-success {
+    background-color: rgba(var(--secundaria-texto-rgb)) !important;
+}
+
+.card:hover {
+    background-color: rgba(var(--primaria-texto-rgb)) !important;
+    color: rgb(var(--secundaria-texto-rgb));
+    cursor: pointer;
+    transition-duration: 0.7s;
+}
